@@ -21,7 +21,7 @@ int displayMenu(double n)
 	cout<<"---------------------------------"<<endl;
 	cout<<"|                               |"<<endl;
 	cout<<"|";
-	if(m==n || l==n)
+	if(m==n || l==n) //in the case of n beeing a integer we will see how long the integer is (how many spaces does it need)
 	{
 	while (m>0)
 	{
