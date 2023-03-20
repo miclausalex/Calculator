@@ -6,12 +6,8 @@
 
 using namespace std;
 
-
 int displayMenu(double n)
-{
-
-	
-	
+{	
 	string str = to_string(n);
 	int x=str.length();
 	int m=floor(n);
@@ -21,6 +17,7 @@ int displayMenu(double n)
 	cout<<"---------------------------------"<<endl;
 	cout<<"|                               |"<<endl;
 	cout<<"|";
+	
 	if(m==n || l==n) //in the case of n beeing a integer we will see how long the integer is (how many spaces does it need)
 	{
 	while (m>0)
@@ -41,8 +38,7 @@ int displayMenu(double n)
 		{
 			cout<<" ";
 		}	
-		cout<<str<<"|"<<endl;
-	
+		cout<<str<<"|"<<endl;	
 	}
 	cout<<"|                               |"<<endl;
 	cout<<"---------------------------------"<<endl;
@@ -53,18 +49,14 @@ int displayMenu(double n)
 	cout<<"|   4   |   5   |   6   |   ^   |"<<endl;
 	cout<<"---------------------------------"<<endl;
 	cout<<"|   =   |   0   |   =   |   %   |"<<endl;
-	cout<<"---------------------------------"<<endl;
-	
-	
+	cout<<"---------------------------------"<<endl;	
 	return 0;
-
 }
 double  addition(double  n)
 {
 	double m;
 	cin>>m;
-	n=n+m;
-	
+	n=n+m;	
 	return n;
 }
 
@@ -72,8 +64,7 @@ double substract(double n)
 {
 	double m;
 	cin>>m;
-	n=n-m;
-	
+	n=n-m;	
 	return n;
 
 }
@@ -81,41 +72,33 @@ double multiplication(double n)
 {
 	double m;
 	cin>>m;
-	n=n*m;
-	
+	n=n*m;	
 	return n;
 }
 double  div(double n)
 {
 	double m;
 	cin>>m;
-	n=n/m;
-	
+	n=n/m;	
 	return n;
 }
 double square(double n)
-{
-	
-	n=n*n;
-	
+{	
+	n=n*n;	
 	return n;
 }
 double sqrtt(double n)
 {
-	double rez=sqrt(n);
-	
-	
-	return rez;
-	
-	
+	double rez=sqrt(n);	
+	return rez;	
 }
 int main(int argc, char **argv)
-{
-	
+{	
 	char choise;
 	double num;
 	
 	cin>>num;
+	
 	system("cls");
 	
 	while (choise!='%')
@@ -147,6 +130,5 @@ int main(int argc, char **argv)
 			choise='%';
 			break;
 		}
-	}
-	
+	}	
 }
